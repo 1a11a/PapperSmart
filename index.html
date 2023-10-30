@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PepperSmart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/1.png" rel="icon">
+  <link href="assets/img/1.png" rel="logo">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.timeline{
+  width:800px;
+  background-color:#075755;
+  color:#fff;
+  padding:30px 20px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+
+  
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.timeline ul{
+  list-style-type:none;
+  border-left:2px solid #094a68;
+  padding:10px 5px;
+}
+.timeline ul li{
+  padding:20px 20px;
+  position:relative;
+  cursor:pointer;
+  transition:.5s;
+}
+.timeline ul li span{
+  display:inline-block;
+  background-color:#072736;
+  border-radius:25px;
+  padding:2px 5px;
+  font-size:15px;
+  text-align:center;
+}
+.timeline ul li .content h3{
+  color:#34ace0;
+  font-size:17px;
+  padding-top:5px;
+}
+.timeline ul li .content p{
+  padding:5px 0px 15px 0px;
+  font-size:15px;
+}
+.timeline ul li:before{
+  position:absolute;
+  content:'';
+  width:10px;
+  height:10px;
+  background-color:#34ace0;
+  border-radius:50%;
+  left:-11px;
+  top:28px;
+  transition:.5s;
+}
+.timeline ul li:hover{
+  background-color:#071f2a;
+}
+.timeline ul li:hover:before{
+  background-color:#0F0;
+  box-shadow:0px 0px 10px 2px #0F0;
+}
+@media (max-width:300px){
+  .timeline{
+    width:100%;
+    padding:30px 5px 30px 10px;
+  }
+  .timeline ul li .content h3{
+    color:#34ace0;
+    font-size:15px;
+  }
+
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@peppersmart.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div>
+   
+    </div>
+  </section> -->
+  <!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/1.png" alt="">
+        <h1>PepperSmart<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#portfolio">Services</a></li> -->
+          <li><a href="#services">Documents</a></li>
+          <li><a href="scope.html">Scope</a></li>
+          <li><a href="#team">Team</a></li>
+         
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Welcome to  <span>PepperSmart</span></h2>
+          <p>The Mobile Application for Bell Paper Farmers in Sri Lanka</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="assets/img/Logo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="icon-boxes position-relative">
+      <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="123"></i></div>
+              <h4 class="title"><a class="stretched-link">Disease Didection</a></h4>
+            </div>
+          </div>
+          <!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="123"></i></div>
+              <h4 class="title"><a  class="stretched-link">Severity Calculation</a></h4>
+            </div>
+          </div>
+          <!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="123"></i></div>
+              <h4 class="title"><a  class="stretched-link">Chat Platform</a></h4>
+            </div>
+          </div>
+          <!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"><i class="123"></i></div>
+              <h4 class="title"><a class="stretched-link">Leaf Area Index</a></h4>
+            </div>
+          </div>
+          <!--End Icon Box -->
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Research Project Scope Section ======= -->
+ 
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Research Project Scope</h2>
+          <p>This section has domain details about our project. Describe the information we have gathered by the
+            literature survey.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis</h3> -->
+            <img src="assets/img/img 2.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <!-- <p>The fundamental objective of delivering this mobile application is to help passengers to have a safe and comfortable ride consuming their time.</p> -->
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Sri Lanka's economy heavily relies on agriculture, accounting for 45.46\% of the nation's total land area in 2020. The World Bank's statistics on agricultural land in March 2023 provide current, historical, projections, and predictions. 30\% of Sri Lankans work in the agricultural sector, despite the tropical nation's potential for crop growth. However, productivity and profitability issues hinder the sector's growth. To assist bell pepper growers in increasing crop yields and lowering losses, the PepperSmart programme employs a smart polytunnel technology. It employs machine learning to enable early identification and treatment of powdery mildew diseases via a smartphone application. Powdery mildew susceptibility rises with age in bell pepper plants, with older plants and mature lower leaves exhibiting the earliest signs. Live host plant tissue is necessary for the fungus' development and survival.
+                
+              </p>
+            
+              <p>
+                Fluffy white dots on the underbelly that might eventually become brown are early indications. By putting the leaf up to the light and keeping an eye on the mildew colonies, you may quickly identify early powdery mildew infections. This research led to the creation of a smart polytunnel system that can detect and assess plant powdery mildew disease in its early stages. With the use of this technology, crop yields and quality may be improved, increasing sustainability and profitability
+
+              </p>
+
+             
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </section><!-- End About Us Section -->
+
+
+    <!-- Timeline Section -->
+    <div class="center">
+    <div class="timeline">
+      <ul>
+        <li>
+          <span>2nd February 2023</span>
+          <div class="content">
+            <h3>Project Proposal</h3>
+            <p>
+              The project including its objectives and methodology was initially proposed to the panel
+                       </p>
+          </div>
+        </li>
+        <li>
+          <span>12th May 2023</span>
+          <div class="content">
+            <h3>Progress Presentation 1</h3>
+            <p>
+              50% of the proposed project was completed and demostrated in this stage
+            </p>
+          </div>
+        </li>
+        <li>
+          <span>11th October 2023</span>
+          <div class="content">
+            <h3>Progress Presentation 2</h3>
+            <p>
+              90% of the proposed project was completed and demostrated in this stage
+             </p>
+          </div>
+        </li>
+        <li>
+          <span>08th October 2023</span>
+          <div class="content">
+            <h3>Demostration & Poster</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </p>
+          </div>
+        </li>
+        <li>
+          <span>15th November 2023</span>
+          <div class="content">
+            <h3>Final Presentation & Viva</h3>
+            <p>
+
+              Final presentation to demostrate the fully functional mobile application and its methodology was done
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Data Collection</strong> through Filed visit</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Farmers</strong> are interviewed for collect to data</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Achievement</strong> accepted for ICAC </p>
+            </div><!-- End Stats Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <a href="https://www.youtube.com/watch?v=NNhHmkXNtYY" class="glightbox play-btn"></a>
+        <h3>Play</h3>
+        <p>The Mobile Application for Bell Paper Farmers in Sri Lanka
+     
+          </p>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+   
+
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Documents & Presentations</h2>
+          <p>The following links will redirect you to the relevent resources</p>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+<!-- FILTER BUTTONS  -->
+<div class="row mt-5 mb-4 g-3 text-center">
+  <div class="col-md-12">
+    <button class="btn btn-outline-primary" type="button" ><a href="https://docs.google.com/document/d/10GvW6Ev2UrRhLZ4Jbw1n516VyQDzgS2B/edit?usp=share_link&ouid=104036581221740137377&rtpof=true&sd=true" class="spepcial_link">Project charter</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://drive.google.com/drive/folders/1Fe8NlvlsyjBbHQbzuD670V76-Udrnnub?usp=sharing" class="spepcial_link"  >Proposal document</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://drive.google.com/drive/folders/1yYoa8OXBtDphfbilV9bJ8B6DthaKzcIp?usp=share_link" class="spepcial_link">Research logbook</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://docs.google.com/document/d/1Ms5d0Vrzl-lnLKuX6Tqs9_3vcJMYaTwk/edit?usp=share_link&ouid=104036581221740137377&rtpof=true&sd=true" class="spepcial_link">Final document</a></button>
+  </div>
+</div>
+<div class="row mt-5 mb-4 g-3 text-center">
+  <div class="col-md-12">
+    <button class="btn btn-outline-primary" type="button"><a href="https://docs.google.com/presentation/d/1tTiYxvhsNAqO0D0JfMRQ31afMO5vdfIx/edit?usp=sharing&ouid=114342143128496943014&rtpof=true&sd=true" class="spepcial_link"  >Proposal presentation</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://drive.google.com/drive/folders/1_AjdkjgooG6qzbQzpLCXZEHTNtoGLIDO?usp=share_link" class="spepcial_link">Progress Presentation-2</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://drive.google.com/file/d/12BcLOzisLn3Hqvt3dw9PYQGNBy0ubFx5/view?usp=share_link" class="spepcial_link">Poster</a></button>
+    <button class="btn btn-outline-primary" type="button"><a href="https://docs.google.com/presentation/d/16CMku_SLS6zs1T3opJtvehj4TBtCvzej/edit?usp=share_link&ouid=104036581221740137377&rtpof=true&sd=true" class="spepcial_link">Final presentation</a></button>
+  </div>
+</div>
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p> This is our PepperSmart team members</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/SAMANTHA.jpg" class="img-fluid" alt="">
+              <h4>DR. SAMANTHA RAJAPAKSHA</h4>
+              <span>Supervisor</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/DHARSHA.jpg" class="img-fluid" alt="">
+              <h4>DR. DHARSHA KASTHURIRATHNA</h4>
+              <span>Co-Supervisor</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/SOMACHANDRA.jpg" class="img-fluid" alt="">
+              <h4>DR. K.P. SOMACHANDRA PATHIRANA</h4>
+              <span>External-Supervisor</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/Senadheera.jpg" class="img-fluid" alt="">
+              <h4>Senadheera S.S.U.</h4>
+              <span>Group Leader</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/Anuththara.jpg" class="img-fluid" alt="">
+              <h4>Anuththara G.H.N.</h4>
+              <span>Group Member</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/Lakmal.jpg" class="img-fluid" alt="">
+              <h4>Lakmal E.L.P.H.</h4>
+              <span>Group Member</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/Sooryasena.jpg" class="img-fluid" alt="">
+              <h4>Sooryasena R.S.A.</h4>
+              <span>Group Member</span>
+              <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+
+
+   
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>PepperSmart</span>
+          </a>
+          <p> The Mobile Application for Bell Paper Farmers in Sri Lanka
+            
+            </p>
+      
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            
+          </ul>
+        </div>
+
+      
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PepperSmart</span></strong>. All Rights Reserved
+      </div>
+    
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
